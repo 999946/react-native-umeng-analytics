@@ -14,14 +14,16 @@ import java.util.List;
  * Created by user on 16/8/18.
  */
 public class UmengAnalyticsPackage  implements ReactPackage {
+
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        return Arrays.asList(new NativeModule[]{
-                // Modules from third-party
-                new UmengAnalyticsModule(reactContext),
-        });
+        List<NativeModule> modules = new ArrayList<>();
+        //初始化modules
+        modules.add(new UmengAnalyticsModule(reactContext));
+        return modules;
     }
 
+    @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }

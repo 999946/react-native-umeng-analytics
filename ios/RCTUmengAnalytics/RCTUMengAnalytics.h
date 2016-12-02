@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RCTBridge.h"
-@interface RCTUmengAnalytics : NSObject<RCTBridgeModule>
+#import "RCTBridgeModule.h"
+@interface RCTUmengAnalytics : NSObject  <RCTBridgeModule>
 
 @end

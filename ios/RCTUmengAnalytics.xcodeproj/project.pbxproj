@@ -7,29 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE26B1DB1D64421700D853E8 /* RCTUmengAnalytics.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE26B1DA1D64421700D853E8 /* RCTUmengAnalytics.h */; };
+		709755EC1DF1657A00F760B6 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709755EB1DF1657A00F760B6 /* UMMobClick.framework */; };
+		CE26B1DB1D64421700D853E8 /* RCTUmengAnalytics.h in Copy Files */ = {isa = PBXBuildFile; fileRef = CE26B1DA1D64421700D853E8 /* RCTUmengAnalytics.h */; };
 		CE26B1DD1D64421700D853E8 /* RCTUmengAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = CE26B1DC1D64421700D853E8 /* RCTUmengAnalytics.m */; };
-		CE7908181D6ACC0400E30741 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7908171D6ACC0400E30741 /* UMMobClick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CE26B1D61D64421700D853E8 /* CopyFiles */ = {
+		CE26B1D61D64421700D853E8 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				CE26B1DB1D64421700D853E8 /* RCTUmengAnalytics.h in CopyFiles */,
+				CE26B1DB1D64421700D853E8 /* RCTUmengAnalytics.h in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		709755EB1DF1657A00F760B6 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		CE26B1D81D64421700D853E8 /* libRCTUmengAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTUmengAnalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE26B1DA1D64421700D853E8 /* RCTUmengAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTUmengAnalytics.h; sourceTree = "<group>"; };
 		CE26B1DC1D64421700D853E8 /* RCTUmengAnalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTUmengAnalytics.m; sourceTree = "<group>"; };
-		CE7908171D6ACC0400E30741 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7908181D6ACC0400E30741 /* UMMobClick.framework in Frameworks */,
+				709755EC1DF1657A00F760B6 /* UMMobClick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +48,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				CE26B2481D6454F000D853E8 /* umsdk_IOS_analyics_idfa_v4.0.4 */,
+				709755EB1DF1657A00F760B6 /* UMMobClick.framework */,
 				CE26B1D91D64421700D853E8 /* RCTUmengAnalytics */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 			);
@@ -72,14 +73,6 @@
 			path = RCTUmengAnalytics;
 			sourceTree = "<group>";
 		};
-		CE26B2481D6454F000D853E8 /* umsdk_IOS_analyics_idfa_v4.0.4 */ = {
-			isa = PBXGroup;
-			children = (
-				CE7908171D6ACC0400E30741 /* UMMobClick.framework */,
-			);
-			path = umsdk_IOS_analyics_idfa_v4.0.4;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,7 +82,7 @@
 			buildPhases = (
 				CE26B1D41D64421700D853E8 /* Sources */,
 				CE26B1D51D64421700D853E8 /* Frameworks */,
-				CE26B1D61D64421700D853E8 /* CopyFiles */,
+				CE26B1D61D64421700D853E8 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -240,6 +233,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/umsdk_IOS_analyics_idfa_v4.0.4/**",
 					"$(PROJECT_DIR)/umsdk_IOS_analyics_idfa_v4.0.4",
+					"$(PROJECT_DIR)",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
@@ -270,6 +264,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/umsdk_IOS_analyics_idfa_v4.0.4/**",
 					"$(PROJECT_DIR)/umsdk_IOS_analyics_idfa_v4.0.4",
+					"$(PROJECT_DIR)",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
