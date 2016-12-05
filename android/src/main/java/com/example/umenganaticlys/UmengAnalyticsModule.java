@@ -24,7 +24,7 @@ import java.util.Map;
  */
 public class UmengAnalyticsModule extends ReactContextBaseJavaModule {
 
-    public static final String NAME = "UmengAnalyticsModule";
+    public static final String NAME = "UmengAnalytics";
     private Context mContext;
     /**
      * 可以设置是否为游戏，如果是游戏会进行初始化
