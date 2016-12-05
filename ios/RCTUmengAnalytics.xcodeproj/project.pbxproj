@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		702A3DCD1DF5412100212AC4 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702A3DCC1DF5411500212AC4 /* UMMobClick.framework */; };
 		CE26B1DB1D64421700D853E8 /* RCTUmengAnalytics.h in Copy Files */ = {isa = PBXBuildFile; fileRef = CE26B1DA1D64421700D853E8 /* RCTUmengAnalytics.h */; };
 		CE26B1DD1D64421700D853E8 /* RCTUmengAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = CE26B1DC1D64421700D853E8 /* RCTUmengAnalytics.m */; };
 /* End PBXBuildFile section */
@@ -26,7 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		70BB7C4E1DF512F3009C5037 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		702A3DCC1DF5411500212AC4 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		CE26B1D81D64421700D853E8 /* libRCTUmengAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTUmengAnalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE26B1DA1D64421700D853E8 /* RCTUmengAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTUmengAnalytics.h; sourceTree = "<group>"; };
 		CE26B1DC1D64421700D853E8 /* RCTUmengAnalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTUmengAnalytics.m; sourceTree = "<group>"; };
@@ -37,16 +38,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702A3DCD1DF5412100212AC4 /* UMMobClick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		70BB7C4D1DF512F3009C5037 /* umsdk_IOS_analyics_no-idfa_v4.1.5 */ = {
+		702A3DCB1DF5411500212AC4 /* umsdk_IOS_analyics_no-idfa_v4.1.5 */ = {
 			isa = PBXGroup;
 			children = (
-				70BB7C4E1DF512F3009C5037 /* UMMobClick.framework */,
+				702A3DCC1DF5411500212AC4 /* UMMobClick.framework */,
 			);
 			path = "umsdk_IOS_analyics_no-idfa_v4.1.5";
 			sourceTree = "<group>";
@@ -54,7 +56,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				70BB7C4D1DF512F3009C5037 /* umsdk_IOS_analyics_no-idfa_v4.1.5 */,
+				702A3DCB1DF5411500212AC4 /* umsdk_IOS_analyics_no-idfa_v4.1.5 */,
 				CE26B1D91D64421700D853E8 /* RCTUmengAnalytics */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 			);
@@ -244,6 +246,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/umsdk_IOS_analyics_no-idfa_v4.1.5/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -271,6 +274,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/umsdk_IOS_analyics_no-idfa_v4.1.5/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
