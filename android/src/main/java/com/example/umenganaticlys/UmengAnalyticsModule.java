@@ -1,10 +1,23 @@
 package com.example.umenganaticlys;
 
 
+import android.content.Context;
+
+import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.ReadableArray;
+import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.bridge.ReadableMapKeySetIterator;
+import com.facebook.react.bridge.ReadableType;
 import com.umeng.analytics.MobclickAgent;
+import com.umeng.analytics.game.UMGameAgent;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by user on 16/6/15.
@@ -27,13 +40,6 @@ public class UmengAnalyticsModule extends ReactContextBaseJavaModule {
     public String getName() {
         return NAME;
     }
-
-    @ReactMethod
-    @SuppressWarnings("unused")
-    public void toast(String msg) {
-        Toast.makeText(mContext, msg, Toast.LENGTH_SHORT).show();
-    }
-
 
     @ReactMethod
     private void initGame() {
