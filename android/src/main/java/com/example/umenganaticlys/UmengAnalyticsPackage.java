@@ -17,7 +17,7 @@ public class UmengAnalyticsPackage  implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        List<NativeModule> modules = new ArrayList<>();
+        List<NativeModule> modules = new ArrayList<NativeModule>();
         //初始化modules
         modules.add(new UmengAnalyticsModule(reactContext));
         return modules;
