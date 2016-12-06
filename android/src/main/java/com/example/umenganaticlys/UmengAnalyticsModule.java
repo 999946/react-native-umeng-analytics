@@ -257,4 +257,10 @@ public class UmengAnalyticsModule extends ReactContextBaseJavaModule {
         UMGameAgent.bonus(item, number, price, source);
     }
 
+	@ReactMethod
+    @SuppressWarnings("unused")
+    public void reportError(String error) {
+        UMGameAgent.reportError(this.getReactApplicationContext(), error);
+    }
+	
 }
